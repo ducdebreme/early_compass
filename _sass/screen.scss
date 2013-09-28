@@ -1,0 +1,107 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+ @import "compass/reset";
+
+
+@import "compass/layout/grid-background"; // siehe auch http://compass-style.org/reference/compass/layout/grid_background/
+
+// Extra small screen / phone
+$screen-phone:                  480px;
+
+// Small screen / tablet
+$screen-tablet:                  768px;
+
+// Medium screen / desktop
+$screen-desktop:                  992px;
+
+// Large screen / wide desktop
+$screen-lg-desktop:                  1200px;
+
+
+
+@import "susy";
+$total-columns: 12;
+$column-width   : 4em;            // each column is 4em wide
+$gutter-width   : 1em;            // 1em gutters between columns
+
+//===================================
+@media (min-width: $screen-tablet) {
+  .row {
+    @include container;
+    // @include susy-grid-background;
+  }
+
+  .col-md-2 {
+    @include span-columns(2);
+  }
+  .col-md-4 {
+    @include span-columns(4);
+  }
+  .col-md-6 {
+    @include span-columns(6);
+  }
+  .col-md-8 {
+    @include span-columns(8);
+  }
+  .col-md-10 {
+    @include span-columns(10);
+  }
+
+  .omega {
+    @include omega();
+  }
+
+}
+
+
+/* Typographic here */
+
+// typography : vertical rhythm 
+@import "compass/typography";
+$sans-font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+$serif-font-family: Georgia, "Times New Roman", Times, serif;
+$mono-font-family: Monaco, Menlo, Consolas, "Courier New", monospace !default;
+
+$base-font-size: 20px;
+$base-line-height: 30px; 
+
+
+
+@include establish-baseline;
+
+body {
+  //font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+  font-family: $serif-font-family;
+  @include adjust-font-size-to($base-font-size);
+  @include debug-vertical-alignment;
+}
+
+// sizes @see http://lamb.cc/typograph/
+h1, .h1 { 
+  @include adjust-font-size-to(2.0 * $base-font-size);
+}
+h2, .h2 { 
+  @include adjust-font-size-to(1.75 * $base-font-size); 
+}
+h3, .h3 { 
+  @include adjust-font-size-to(1.5 * $base-font-size); 
+}
+h4, .h4 { 
+  @include adjust-font-size-to(1.33 * $base-font-size); 
+}
+h5, .h5 { 
+  @include adjust-font-size-to(1.1667 * $base-font-size); 
+}
+//add extra space before headlines
+h1,h2,h3,h4,h5,
+.h1,.h2,.h3,.h4,.h5 {
+  @include padding-leader(0.5);  
+}
+
+p {
+  @include padding-trailer(0.5);
+}
+
