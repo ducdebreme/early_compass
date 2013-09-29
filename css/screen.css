@@ -67,8 +67,80 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+/* Typographic here */
+/* line 61, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 125%;
+}
+
+/* line 64, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+/* line 10, ../_sass/type.scss */
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+/* line 14, ../_sass/type.scss */
+body:hover {
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(5%, rgba(0, 0, 0, 0.5)), color-stop(5%, rgba(0, 0, 0, 0)));
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
+  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
+  -webkit-background-size: 100% 1.5em;
+  -moz-background-size: 100% 1.5em;
+  -o-background-size: 100% 1.5em;
+  background-size: 100% 1.5em;
+  background-position: left top;
+}
+
+/* line 18, ../_sass/type.scss */
+h1, .h1 {
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+/* line 21, ../_sass/type.scss */
+h2, .h2 {
+  font-size: 1.75em;
+  line-height: 1.71429em;
+}
+
+/* line 24, ../_sass/type.scss */
+h3, .h3 {
+  font-size: 1.5em;
+  line-height: 2em;
+}
+
+/* line 27, ../_sass/type.scss */
+h4, .h4 {
+  font-size: 1.33em;
+  line-height: 2.25564em;
+}
+
+/* line 30, ../_sass/type.scss */
+h5, .h5 {
+  font-size: 1.1667em;
+  line-height: 1.28568em;
+}
+
+/* line 34, ../_sass/type.scss */
+h1, h2, h3, h4, h5 {
+  padding-top: 0.75em;
+}
+
+/* line 38, ../_sass/type.scss */
+p {
+  padding-bottom: 0.75em;
+}
+
 @media (min-width: 768px) {
-  /* line 32, ../_sass/screen.scss */
+  /* line 5, ../_sass/grid.scss */
   .row {
     *zoom: 1;
     max-width: 59em;
@@ -85,7 +157,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     clear: both;
   }
 
-  /* line 37, ../_sass/screen.scss */
+  /* line 10, ../_sass/grid.scss */
   .col-md-2 {
     width: 15.25424%;
     float: left;
@@ -93,7 +165,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: inline;
   }
 
-  /* line 40, ../_sass/screen.scss */
+  /* line 13, ../_sass/grid.scss */
   .col-md-4 {
     width: 32.20339%;
     float: left;
@@ -101,7 +173,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: inline;
   }
 
-  /* line 43, ../_sass/screen.scss */
+  /* line 16, ../_sass/grid.scss */
   .col-md-6 {
     width: 49.15254%;
     float: left;
@@ -109,7 +181,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: inline;
   }
 
-  /* line 46, ../_sass/screen.scss */
+  /* line 19, ../_sass/grid.scss */
   .col-md-8 {
     width: 66.10169%;
     float: left;
@@ -117,7 +189,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: inline;
   }
 
-  /* line 49, ../_sass/screen.scss */
+  /* line 22, ../_sass/grid.scss */
   .col-md-10 {
     width: 83.05085%;
     float: left;
@@ -125,80 +197,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: inline;
   }
 
-  /* line 53, ../_sass/screen.scss */
+  /* line 26, ../_sass/grid.scss */
   .omega {
     float: right;
     margin-right: 0;
     *margin-left: -1em;
     display: inline;
   }
-}
-/* Typographic here */
-/* line 61, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
-* html {
-  font-size: 125%;
-}
-
-/* line 64, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
-html {
-  font-size: 20px;
-  line-height: 1.5em;
-}
-
-/* line 75, ../_sass/screen.scss */
-body {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1em;
-  line-height: 1.5em;
-  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(5%, rgba(0, 0, 0, 0.5)), color-stop(5%, rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  -webkit-background-size: 100% 1.5em;
-  -moz-background-size: 100% 1.5em;
-  -o-background-size: 100% 1.5em;
-  background-size: 100% 1.5em;
-  background-position: left top;
-}
-
-/* line 83, ../_sass/screen.scss */
-h1, .h1 {
-  font-size: 2em;
-  line-height: 1.5em;
-}
-
-/* line 86, ../_sass/screen.scss */
-h2, .h2 {
-  font-size: 1.75em;
-  line-height: 1.71429em;
-}
-
-/* line 89, ../_sass/screen.scss */
-h3, .h3 {
-  font-size: 1.5em;
-  line-height: 2em;
-}
-
-/* line 92, ../_sass/screen.scss */
-h4, .h4 {
-  font-size: 1.33em;
-  line-height: 2.25564em;
-}
-
-/* line 95, ../_sass/screen.scss */
-h5, .h5 {
-  font-size: 1.1667em;
-  line-height: 1.28568em;
-}
-
-/* line 100, ../_sass/screen.scss */
-h1, h2, h3, h4, h5,
-.h1, .h2, .h3, .h4, .h5 {
-  padding-top: 0.75em;
-}
-
-/* line 104, ../_sass/screen.scss */
-p {
-  padding-bottom: 0.75em;
 }
